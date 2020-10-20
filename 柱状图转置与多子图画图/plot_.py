@@ -60,4 +60,7 @@ plt.suptitle(m1, fontsize=20)
 for i, value in enumerate(y, 2):
     plt.text(i, value - value * 0.0022, f'{value:,}', va = 'center', color = 'black', fontsize = 'xx-large')
 
+# 存储小，矢量图
+plt.savefig('2.pdf', bbox_inches='tight')
+# 交作业用
 plt.savefig('2.png', bbox_inches='tight')
